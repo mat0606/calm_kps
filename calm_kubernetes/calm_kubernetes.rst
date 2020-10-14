@@ -68,6 +68,8 @@ Retrieve the CA Client Certificate & Client Key in the Kubernetes Cluster
   
     ls -la $HOME/.kube
 
+  .. note::
+
 #. Run this command to get the client certificate.  It was an example of the client certificate in my Kubernetes cluster.  The contents would be used later.
   
   code-block:: bash
@@ -147,11 +149,11 @@ Add a Kubernetes Provider in Calm
 
 #. Click on +Add Provider
 
-  .. figure:: images/Calm-provider.png
+  .. figure:: images/Calm_provider.png
 
 #. Key in the following: 1st Kubernetes Master Node IP address.
 
-  .. figure:: images/K8S-provider.png
+  .. figure:: images/K8S_provider.png
 
 #. Scroll down and key in the following:
 
