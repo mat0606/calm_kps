@@ -32,6 +32,14 @@
 
   calm_kubernetes/calm_kubernetes
 
+  .. toctree::
+  :maxdepth: 2
+  :caption: Karbon Platform Service
+  :name: _calm_kps
+  :hidden:
+
+  calm_kps/calm_kps
+
 
 
 

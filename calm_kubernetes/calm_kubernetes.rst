@@ -64,46 +64,52 @@ Retrieve the CA Client Certificate & Client Key in the Kubernetes Cluster
   
   .. figure:: images/kubeconfig.png
 
-  ls -la $HOME/.kube
+  code-block:: bash
+  
+    ls -la $HOME/.kube
 
 #. Run this command to get the client certificate.  It was an example of the client certificate in my Kubernetes cluster.  The contents would be used later.
   
   code-block:: bash
+
     cat /home/centos/CA/admin.pem
 
   ::
-    -----BEGIN CERTIFICATE-----
-	MIID1jCCAr6gAwIBAgIUH0mxkFlhFWeiD4jHBNn1PkgVsScwDQYJKoZIhvcNAQEL
-	BQAwYzELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExETAPBgNVBAcT
-	CFNhbiBKb3NlMQ0wCwYDVQQKEwRrdWJlMQswCQYDVQQLEwJDQTEQMA4GA1UEAxMH
-	a3ViZS1jYTAeFw0yMDEwMDUxMzExMDBaFw0yMTEwMDUxMzExMDBaMHAxCzAJBgNV
-	BAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMREwDwYDVQQHEwhTYW4gSm9zZTEX
-	MBUGA1UEChMOc3lzdGVtOm1hc3RlcnMxEDAOBgNVBAsTB0NsdXN0ZXIxDjAMBgNV
-	BAMTBWFkbWluMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuioOdCBy
-	rs1dIDdSi6hgMeZzwJePrt+fBVgWDGhhu3vmVwqlOC4TO0ZbXmnwld1fRcAz0/gD
-	zb6/PBpzAYZ0/9VVjWnfDAdVqxHUM4VCDHW3CBlUsPKwdO4ojKUS5KOUb5nsOgse
-	xN6taCQx2bzVPbe+OktL1uiTwFKUWfk4t06BusX/M+aQO0Zb4wxRVbM7hkUt/Vrq
-	dwZps6SLvdmLjHieGtBgAPDa8UON50VIM0zOM1uw4o/5isMbFrFhyDo3CDZresaK
-	b5fR8xGOyAO7Bg5Gz6JcgJB5EUFVOZMofVn21tLNnQEnl92EK005suSUJK620277
-	nHFIzJjcN8P3PwIDAQABo3UwczAOBgNVHQ8BAf8EBAMCBSAwEwYDVR0lBAwwCgYI
-	KwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUpPMg8Zrj/9SR4KB1nw82
-	FPlSTiIwHwYDVR0jBBgwFoAUv2DRV84bNnWcBCNdwZTeWgLwFpIwDQYJKoZIhvcN
-	AQELBQADggEBAF+onhC7WgraRyv7PatJappFMQChYF6M/AcXbWoJDRlPpgeHZt1T
-	0X+LpkJX0iwpwQ3pDrUG72mbscTml/LmsXcEL6nAzYyrkJaj/fxX6W9HXhTbs8Ik
-	Q3HhTRUWXJSAMPtROUy2PhTk59KdLr5tAZMaPAkYkkSubD/voji4wqt2ikxTWsc7
-	+yW0mZma15ASkzBMn5Xljn3pbuA3HRg3/mnY3p0B0HX8jBF2NmMyGqwJppLxIq+/
-	9KZm7mDvGvhrFC6hTn4OCenbQKQlWd3/WyURsspoZ64Kx7ffI2fckeckkhdGM4rr
-	VQsarb4SjeZkm5tlDl/vuR9drdfKmEZc+jA=
-	-----END CERTIFICATE-----
 
- #.  Run this command to get the client key.  It was an example of the client key in my Kubernetes cluster.  The contents would be used later.
+    -----BEGIN CERTIFICATE-----
+    MIID1jCCAr6gAwIBAgIUH0mxkFlhFWeiD4jHBNn1PkgVsScwDQYJKoZIhvcNAQEL
+    BQAwYzELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExETAPBgNVBAcT
+    CFNhbiBKb3NlMQ0wCwYDVQQKEwRrdWJlMQswCQYDVQQLEwJDQTEQMA4GA1UEAxMH
+    a3ViZS1jYTAeFw0yMDEwMDUxMzExMDBaFw0yMTEwMDUxMzExMDBaMHAxCzAJBgNV
+    BAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMREwDwYDVQQHEwhTYW4gSm9zZTEX
+    MBUGA1UEChMOc3lzdGVtOm1hc3RlcnMxEDAOBgNVBAsTB0NsdXN0ZXIxDjAMBgNV
+    BAMTBWFkbWluMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuioOdCBy
+    rs1dIDdSi6hgMeZzwJePrt+fBVgWDGhhu3vmVwqlOC4TO0ZbXmnwld1fRcAz0/gD
+    zb6/PBpzAYZ0/9VVjWnfDAdVqxHUM4VCDHW3CBlUsPKwdO4ojKUS5KOUb5nsOgse
+    xN6taCQx2bzVPbe+OktL1uiTwFKUWfk4t06BusX/M+aQO0Zb4wxRVbM7hkUt/Vrq
+    dwZps6SLvdmLjHieGtBgAPDa8UON50VIM0zOM1uw4o/5isMbFrFhyDo3CDZresaK
+    b5fR8xGOyAO7Bg5Gz6JcgJB5EUFVOZMofVn21tLNnQEnl92EK005suSUJK620277
+    nHFIzJjcN8P3PwIDAQABo3UwczAOBgNVHQ8BAf8EBAMCBSAwEwYDVR0lBAwwCgYI
+    KwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUpPMg8Zrj/9SR4KB1nw82
+    FPlSTiIwHwYDVR0jBBgwFoAUv2DRV84bNnWcBCNdwZTeWgLwFpIwDQYJKoZIhvcN
+    AQELBQADggEBAF+onhC7WgraRyv7PatJappFMQChYF6M/AcXbWoJDRlPpgeHZt1T
+    0X+LpkJX0iwpwQ3pDrUG72mbscTml/LmsXcEL6nAzYyrkJaj/fxX6W9HXhTbs8Ik
+    Q3HhTRUWXJSAMPtROUy2PhTk59KdLr5tAZMaPAkYkkSubD/voji4wqt2ikxTWsc7
+    +yW0mZma15ASkzBMn5Xljn3pbuA3HRg3/mnY3p0B0HX8jBF2NmMyGqwJppLxIq+/
+    9KZm7mDvGvhrFC6hTn4OCenbQKQlWd3/WyURsspoZ64Kx7ffI2fckeckkhdGM4rr
+    VQsarb4SjeZkm5tlDl/vuR9drdfKmEZc+jA=
+    -----END CERTIFICATE-----
+
+#.  Run this command to get the client key.  It was an example of the client key in my Kubernetes cluster.  The contents would be used later.
   
 
-   code-block:: bash
-     cat /home/centos/CA/admin-key.pem
+  code-block:: bash
+  
+    cat /home/centos/CA/admin-key.pem
 
-   ::
-     -----BEGIN RSA PRIVATE KEY-----
+  ::
+
+    -----BEGIN RSA PRIVATE KEY-----
 	MIIEpAIBAAKCAQEAuioOdCByrs1dIDdSi6hgMeZzwJePrt+fBVgWDGhhu3vmVwql
 	OC4TO0ZbXmnwld1fRcAz0/gDzb6/PBpzAYZ0/9VVjWnfDAdVqxHUM4VCDHW3CBlU
 	sPKwdO4ojKUS5KOUb5nsOgsexN6taCQx2bzVPbe+OktL1uiTwFKUWfk4t06BusX/
@@ -184,9 +190,10 @@ Create a blueprint to deploy the Wordpress application
 #. Putty into the 1st Kubernetes Master Node IP address.  Create a secret named mysql-pass.  Run this command
 
   code-block:: bash
+    
     kubectl create secret generic mysql-pass --from-literal=password=Nutanix/4u -n default
 
-  .. figure:: images/CreateSecret.png.png
+  .. figure:: images/CreateSecret.png
 
 #. Go to the blueprint.  Choose **Multi VM/Pod** Blueprint.
 
@@ -194,7 +201,7 @@ Create a blueprint to deploy the Wordpress application
 
 #. Name the blueprint as Wordpress_User_Initial.  Choose your respective project.  Click on **Proceed**
 
-  .. figure:: images/CreateBP.png.png
+  .. figure:: images/CreateBP.png
 
 Create Variables in the blueprint
 *********************************
@@ -239,6 +246,7 @@ Create the MySQL Pod
   .. figure:: images/MYSQLAPP-PodDeploy.png
 
   code-block:: bash
+
     type: PROVISION_K8S_DEPLOYMENT
 	spec:
 	  selector:
@@ -268,6 +276,7 @@ Create the MySQL Pod
   .. figure:: images/MYSQLAPP_Container.png
 
   code-block:: bash
+    
     name: mysql
 	env:
 	  - name: MYSQL_ROOT_PASSWORD
@@ -282,6 +291,7 @@ Create the MySQL Pod
   .. figure:: images/MYSQLAPP_Service.png
 
   code-block:: bash
+    
     spec:
 	  type: ClusterIP
 	  ports:
@@ -320,6 +330,7 @@ Create the Wordpress pod
   .. figure:: images/WORDPRESSAPP_Pod.png
 
   code-block:: bash
+    
     type: PROVISION_K8S_DEPLOYMENT
 	spec:
 	  selector:
@@ -349,6 +360,7 @@ Create the Wordpress pod
   .. figure:: images/WORDPRESSAPP_Container.png
 
   code-block:: bash
+    
     name: wordpress
 	env:
 	  - name: WORDPRESS_DB_HOST
@@ -365,6 +377,7 @@ Create the Wordpress pod
   .. figure:: images/WORDPRESSAPP_Service.png
 
   code-block:: bash
+    
     type: PROVISION_K8S_SERVICE
 	spec:
 	  type: NodePort
