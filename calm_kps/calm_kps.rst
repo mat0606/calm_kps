@@ -41,11 +41,12 @@ Create Service Domain in Karbon Platform Service
 
 #.  Select the network.
 
-  .. figure:: images/003_sdvmimg
+  .. figure:: images/003_sdvmimg.png
 
 #. Power up the VM.  Note down the IP address for the Service Domain VM.  Run this url in the browser.  Copy the serial no.
 
   code-block:: bash
+
     http://<Service Domain VM>:8080/v1/sn
 
    .. figure:: images/sn.png
@@ -61,7 +62,7 @@ Create Service Domain in Karbon Platform Service
 
 #. Fill in the information to create a single node service domain
 
-   .. figure:: images/single-node-sd.png.png
+   .. figure:: images/single-node-sd.png
 
 #. Scroll down.  Use the serial no to fill in the details.
 

@@ -71,7 +71,7 @@ Retrieve the CA Client Certificate & Client Key in the Kubernetes Cluster
 #. Run this command to get the client certificate.  It was an example of the client certificate in my Kubernetes cluster.  The contents would be used later.
   
   code-block:: bash
-
+  
     cat /home/centos/CA/admin.pem
 
   ::
@@ -156,7 +156,7 @@ Add a Kubernetes Provider in Calm
 #. Scroll down and key in the following:
 
    - **Auth Type** - Certificate
-   - **Client Certificate ** - Paste the contents of the client certificate
+   - **Client Certificate** - Paste the contents of the client certificate
    - **Client Key** - Paste the contents of the client key
 
   .. figure:: images/K8S_Provider_Contents.png
@@ -246,7 +246,7 @@ Create the MySQL Pod
   .. figure:: images/MYSQLAPP-PodDeploy.png
 
   code-block:: bash
-
+  
     type: PROVISION_K8S_DEPLOYMENT
 	spec:
 	  selector:
